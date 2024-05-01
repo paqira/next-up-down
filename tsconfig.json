@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "NodeNext",
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "lib": ["ES5"]
+  },
+  "include": ["src"],
+  "exclude": ["**/*.test.ts"]
+}
