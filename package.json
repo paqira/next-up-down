@@ -2,10 +2,11 @@
   "name": "@paqira/next-up-down",
   "version": "0.1.0",
   "description": "JavaScript/TypeScript port of Rust f64::next_up and f64::next_down",
+  "homepage": "https://github.com/paqira/next-up-down",
   "author": "Kentaro Tatsumi <paqira.2019@gmail.com>",
   "license": "MIT or Apache-2.0",
-  "main": "dist/next-up-down.js",
-  "types": "dist/next-up-down.d.ts",
+  "main": "./dist/next-up-down.js",
+  "types": "./dist/next-up-down.d.ts",
   "type": "module",
   "files": [
     "dist/*"
@@ -18,12 +19,10 @@
     "lint": "eslint src",
     "check": "prettier --check . && eslint src",
     "doc": "typedoc --readme README.md src/next-up-down.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run lint && npm test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/paqira/next-up-down"
-  },
+  "repository": "github:paqira/next-up-down",
   "devDependencies": {
     "@eslint/js": "^8.57.0",
     "@jest/globals": "^29.7.0",
